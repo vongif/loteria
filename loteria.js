@@ -1,8 +1,12 @@
 
 function sortear(){
 
+function sorteando(){   
 let sorteo = Math.ceil(Math.random() * (5 - 0) + 0); 
 document.getElementById("numero").innerHTML=sorteo;
+}
+sorteando()
+
 let uno = Math.ceil(Math.random() * (5-0) + 0);
 document.getElementById("1").innerHTML=uno;
 let dos = Math.ceil(Math.random() * (5-0) + 0);
