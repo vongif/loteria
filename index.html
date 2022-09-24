@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,17 +12,17 @@
 
 <body>
     <div>
-        <div class="sorteo">
-            <a> Numero Sorteado: </a>
-            <div  class="number">  </div>
         
-        <button onclick="sorteando()" id="numero">
-           Obtener Numero
-        </button>
-      
-        </div>    
-        <div class="carton">
-            <div class="carton1">
+        <div class="sorteo">
+        <a> Numero Sorteado: </a>
+        <div  class="number">  </div>     
+        <div id="numero">
+        </div>
+        <input type="button" value="CLICK" onclick="location.reload( )" id="boton" class="numSorteado">
+        </div> 
+        
+        <div>Participante 1</div>      
+        <div class="carton1">
             <div>
                 <div id="1"></div>
                 <div id="igual1"></div>
@@ -40,34 +39,54 @@
                 <div id="4"></div>
                 <div id="igual4"></div>
             </div>
+            </div>Aciertos
+            <div >
+           </div>  
+               
+            <div id="aciertos">
             </div>
-            <div class="carton2">
-            <div>
-                <div id="5"></div>
-                <div id="igual5"></div>
-            </div>
-
-            <div>
-                <div id="6"></div>
-                <div id="igual6"></div>
-            </div>
-            </div>
-            <div class="carton3">
-            <div>
-                <div id="7"></div>
-                <div id="igual7"></div>
-            </div>
-            <div>
-                <div id="8"></div>
-                <div id="igual8"></div>
-            </div>
-            </div>
-
+           </script>    
         </div>
+       <br>
+       <br>
+       <br>
+       <hr>
+       <br>
+       <br>
+       <br>
+
+        <div>Participante 2</div>
+        <div class="carton2">
+                <div>
+                    <div id="5"></div>
+                    <div id="igual5"></div>
+                </div>
+                <div>
+                    <div id="6"></div>
+                    <div id="igual6"></div>
+                </div>
+                <div>
+                    <div id="7"></div>
+                    <div id="igual7"></div>
+                </div>
+                <div>
+                    <div id="8"></div>
+                    <div id="igual8"></div>
+                </div>
+            </div>Aciertos
+            
+            <div id="aciertos1">
+            </div>
+            
+        </div>
+
+        <div>RESULTADO</div>
+        <div id="resultado"></div>
+
         <script src="loteria.js"></script>
 
+    </div>    
+            
+        </body>
 
-</body>
-
-</html>
-
+        </html>

@@ -19,7 +19,8 @@ a{
 .sorteo{
     
     display: flex;
-    justify-content: center
+    justify-content: center;
+    font-size: 70px;
     
 }
 .carton1{
@@ -29,15 +30,53 @@ a{
     margin-top: 70px;
 }
 .carton2{
+    font-size: 40px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.numSorteado {
+  width: 80px;
+  height: 40px;
+  display: inline-block;
+  padding: 20px 25px;
+  font-size: 10px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: #6A5ACD;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-left: 20px;
+  font-weight: 700;
+}
+
+.numSorteado:active {
+  background-color: #E6E6FA;
+  box-shadow: 0 5px  #E6E6FA;
+  transform: translateY(4px);
+}
+
+.carton5{
+    font-size: 40px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+.carton6{
     display: flex;
     justify-content: space-evenly;
 }
-.carton3{
+.carton7{
     display: flex;
     justify-content: space-around;
 }
 
-.carton4{
+.carton8{
     display: flex;
     justify-content: space-around;
 }
