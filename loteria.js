@@ -1,9 +1,11 @@
 let sorteo = Math.ceil(Math.random() * (5 - 0) + 0); 
     document.getElementById("numero").innerHTML=sorteo;
 
+let i = 0
+let a = 0    
+
 function sortear(){
- 
-    
+     
     let uno = Math.ceil(Math.random() * (5-0) + 0);
     document.getElementById("1").innerHTML=uno;
     let dos = Math.ceil(Math.random() * (5-0) + 0);
@@ -49,7 +51,7 @@ function sortear(){
     }
     carton4()
     
-    i = 0
+    
     switch(sorteo){
      case uno: i=i+1 
     document.getElementById("aciertos").innerHTML= i
@@ -69,17 +71,21 @@ function sortear(){
      case cuatro:  i=i+1 
      document.getElementById("aciertos").innerHTML= i
     break; 
-    
     }
+}
+sortear()
+
+
+function sortearmas(){
 
     let cinco = Math.ceil(Math.random() * (5-0) + 0);
-    document.getElementById("5").innerHTML=uno;
+    document.getElementById("5").innerHTML=cinco;
     let seis = Math.ceil(Math.random() * (5-0) + 0);
-    document.getElementById("6").innerHTML=dos;
+    document.getElementById("6").innerHTML=seis;
     let siete = Math.ceil(Math.random() * (5-0) + 0);
-    document.getElementById("7").innerHTML=tres;
+    document.getElementById("7").innerHTML=siete;
     let ocho = Math.ceil(Math.random() * (5-0) + 0);
-    document.getElementById("8").innerHTML=cuatro;
+    document.getElementById("8").innerHTML=ocho;
             
         function carton5() {
             if (cinco === sorteo) {
@@ -117,42 +123,38 @@ function sortear(){
         }
         carton8()
         
-        i = 0
+        
         switch(sorteo){
-         case cinco: i=i+1 
-        document.getElementById("aciertos1").innerHTML= i
+         case cinco: a=a+1 
+        document.getElementById("aciertos1").innerHTML = a
         break;
         }
         switch(sorteo){ 
-        case seis:  i=i+1 
-         document.getElementById("aciertos1").innerHTML= i
+        case seis:  a=a+1 
+         document.getElementById("aciertos1").innerHTML = a
         break; 
         }
         switch(sorteo){  
-         case siete:  i=i+1 
-         document.getElementById("aciertos1").innerHTML= i
+         case siete:  a=a+1 
+         document.getElementById("aciertos1").innerHTML = a
         break;
         }
         switch(sorteo){ 
-         case ocho:  i=i+1 
-         document.getElementById("aciertos1").innerHTML= i
-        break; 
-            
+         case ocho:  a=a+1 
+         document.getElementById("aciertos1").innerHTML = a
+        break;     
         }
-    
-    let aciertos = document.getElementById("aciertos").value;
-    let aciertos1 = document.getElementById("aciertos1").value;
-     console.log (aciertos)
-     console.log (aciertos1)   
-    
+    }
+    sortearmas()
 
-   /* if(aciertos > aciertos1 ){
+    console.log(i)
+
+    if( i > a ){
         document.getElementById("resultado").innerHTML= "Ganador : Participante 1"
-    }else if(aciertos.value < aciertos1.id.value ){
+    }else if( i < a ){
         document.getElementById("resultado").innerHTML= "Ganador : Participante 2"
     }else{
         document.getElementById("resultado").innerHTML= "Empate"
     }        
-     */     
-}
-sortear()
+    
+

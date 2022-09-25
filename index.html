@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
     <link rel="stylesheet" href="estilo.css">
-
+    
     <title>Loteria</title>
 
 </head>
 
 <body>
     <div>
-        
+           
         <div class="sorteo">
-        <a> Numero Sorteado: </a>
+        <a class="font"> Numero Sorteado: </a>
         <div  class="number">  </div>     
         <div id="numero">
         </div>
         <input type="button" value="CLICK" onclick="location.reload( )" id="boton" class="numSorteado">
         </div> 
         
-        <div>Participante 1</div>      
+        <div class="participante1">
+        <div class="font">Participante 1</div>      
         <div class="carton1">
             <div>
                 <div id="1"></div>
@@ -39,23 +42,22 @@
                 <div id="4"></div>
                 <div id="igual4"></div>
             </div>
-            </div>Aciertos
-            <div >
+            </div>
+            <div class="font">Aciertos
            </div>  
                
-            <div id="aciertos">
+            <div id="aciertos" class="acierto">
             </div>
            </script>    
         </div>
-       <br>
-       <br>
+         </div>
+       
        <br>
        <hr>
        <br>
-       <br>
-       <br>
-
-        <div>Participante 2</div>
+       
+        <div class="participante2">
+        <div class="font">Participante 2</div>
         <div class="carton2">
                 <div>
                     <div id="5"></div>
@@ -73,16 +75,17 @@
                     <div id="8"></div>
                     <div id="igual8"></div>
                 </div>
-            </div>Aciertos
-            
-            <div id="aciertos1">
+
             </div>
-            
+            <div class="font">Aciertos</div>
+            <div id="aciertos1" class="acierto">
+            </div>   
         </div>
-
-        <div>RESULTADO</div>
-        <div id="resultado"></div>
-
+         </div> 
+        <div class="result">
+        <div class="font">Resultado:  </div>
+        <div id="resultado" class="font"></div>
+        </div>
         <script src="loteria.js"></script>
 
     </div>    
